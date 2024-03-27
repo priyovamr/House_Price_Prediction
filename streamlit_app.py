@@ -29,6 +29,6 @@ predict = ''
 
 if st.button("Prediksi Harga"):
     predict = model.predict(
-        [[hour, day, distance, short_summary, cab_type, name, surge_multiplier]]
+        [[Jenis_Rumah, Lokasi, KT, KM, Garasi, LT, LB, KPR_Bulanan]]
     )
     st.write("Prediksi Harga Rumah (dalam juta) : ", predict)
